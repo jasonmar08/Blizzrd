@@ -1,0 +1,164 @@
+body {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5rem;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#logo {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  z-index: 1;
+}
+
+.header {
+  padding: 0;
+  margin-bottom: -3.5rem;
+  text-shadow: 0 0 3px rgb(141, 188, 200);
+  font-size: 1.5em;
+  color: rgb(141, 188, 200);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  z-index: 1;
+}
+
+form {
+  display: flex;
+  height: 3.5rem;
+  column-gap: 1rem;
+}
+
+input {
+  color: white;
+  font-size: 20px;
+  background-color: rgba(51, 87, 113, 0.922);
+  border: none;
+  border-radius: 6% / 25%;
+  padding: 0 1rem;
+  box-shadow: 0 10px 30px -4px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+::placeholder {
+  color: rgba(188, 188, 188, 0.87);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+  position: relative;
+  background-color: rgba(109, 71, 167, 0.901);
+  color: rgb(187, 196, 68);
+  cursor: pointer;
+  font-size: 24px;
+  padding: 0 2rem;
+  border-radius: 8% / 18%;
+  border: none;
+  box-shadow: 0 10px 30px -4px rgba(0, 0, 0, 0.7);
+}
+
+button:hover {
+  background-color: rgba(157, 115, 219, 0.813);
+  color: rgb(249, 255, 186);
+  padding-right: 2.5rem;
+  padding-left: 1.5rem;
+  box-shadow: 0 10px 30px -4px rgba(93, 93, 93, 0.7);
+}
+
+button:active {
+  background-color: rgba(88, 60, 130, 0.813);
+  color: rgb(118, 122, 80);
+}
+
+button:after {
+  content: '🌦';
+  position: absolute;
+  opacity: 0;
+  top: 12px;
+  right: -20px;
+  transition: 0.5s;
+}
+button:hover:after {
+  opacity: 1;
+  right: 7px;
+}
+
+.info-grid {
+  position: relative;
+  display: flex;
+  align-items: center;
+  row-gap: 3rem;
+  column-gap: 4rem;
+  justify-content: center;
+  background-color: rgba(48, 67, 81, 0.732);
+  padding: 2rem;
+  border-radius: 5% / 8%;
+  box-shadow: 0 10px 30px -4px rgba(0, 0, 0, 0.7);
+  flex-wrap: wrap;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  color: rgb(215, 224, 88);
+  text-shadow: 0 0 4px rgb(226, 232, 145);
+}
+
+.temp {
+  color: rgb(240, 208, 120)
+}
+
+img {
+  padding: 1rem;
+  background-color: rgba(223, 223, 223, 0.278);
+  border-radius: 50%;
+  box-shadow: 0 10px 30px -4px rgba(0, 0, 0, 0.7);
+  height: 10rem;
+  width: auto;
+}
+
+.reload, a {
+  position: absolute;
+  width: 2rem;
+  height: auto;
+  background: none;
+  box-shadow: none;
+  border: none;
+  right: 1px;
+  top: 1px;
+  cursor: pointer;
+}
+
+.reload:hover {
+  filter: drop-shadow(0 0 0.5rem rgb(255, 217, 0));
+}
+
+/* =============================================== */
+
+@media only screen and (max-width: 600px) {
+  body {
+    /* background-size: auto 100%; */
+  }
+
+  .info-grid {
+    border-radius: 15% / 10%;
+    padding-bottom: 3rem;
+  }
+
+  .reload, a {
+    right: 4px;
+    top: 3px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blizzrd</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/blizzrd_tab_logo.png' %}" />
+    <meta name="description" content="description"/>
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <link rel="stylesheet" href="{% static 'styles.css' %}" type="text/css" />
+  </head>
+  <body>
+    <video autoplay loop muted>
+      <source src="{% static 'images/blizzrd_background.mp4' %}" type="video/mp4">
+    </video>
+    <img src="https://i.postimg.cc/fW1xwWyH/blizzrd-logo.png" alt="logo" id="logo" />
+    <h1 class="header">Local forecast by city</h1>
+    <form method="POST">{% csrf_token %}
+      <input type='text' placeholder="Enter city" name="city" />
+      <button type="submit">Brrr</button>
+    </form>
+    <div class="info-grid">
+      <div>
+        <h1>{{city}}, {{country}}</h1>
+        <h2>{{description}}</h2>
+        <h2 class="temp">{{temp}}ºF</h2>
+        <h2>{{day}}</h2>
+      </div>
+      <img src="http://openweathermap.org/img/w/{{icon}}.png" width="100px" />
+      <a href="{{ request.get_full_path }}">
+        <img src="{% static 'images/reload_icon.png' %}" alt="reload" class="reload" />
+      </a>
+    </div>
+  </body>
+</html>

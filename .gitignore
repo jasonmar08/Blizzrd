@@ -1,0 +1,11 @@
+# Django #
+media
+
+# Distribution / packaging 
+.Python build/ 
+
+# pyenv 
+.python-version 
+
+# Environments 
+.env
