@@ -53,7 +53,7 @@ Blizzrd is a animated weather forecast app that allows you to check your local w
 
 ## Future Updates
 
-- [ ] Add Favorites feature to save past searches
-- [ ] Implement Sign Up and Sign In functionality
+- [ ] Add "Favorites" feature to save past searches
+- [ ] Implement "Sign Up" and "Sign In" functionality
 - [ ] Integrate search by map API coordinates
 - [ ] Allow users to toggle between ºF and ºC
