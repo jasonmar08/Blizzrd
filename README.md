@@ -12,7 +12,7 @@
 
 ---
 
-### <a href="http://d16pebddosrjbz.cloudfront.net/" target="_blank" alt="Deployed Website" rel="noreferrer">Deployed Website</a>
+### <a href="http://devapp.pythonanywhere.com/" target="_blank" alt="Deployed Website" rel="noreferrer">Deployed Website</a>
 
 ---
 
