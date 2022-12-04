@@ -47,7 +47,7 @@ Blizzrd is a animated weather forecast app that allows you to check your local w
 - Django
 - HTML
 - CSS
-- Firebase
+- PythonAnywhere
 
 ---
 
