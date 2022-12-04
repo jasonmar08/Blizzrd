@@ -67,6 +67,7 @@ button {
   border-radius: 8% / 18%;
   border: none;
   box-shadow: 0 10px 30px -4px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
 }
 
 button:hover {
@@ -147,10 +148,6 @@ img {
 /* =============================================== */
 
 @media only screen and (max-width: 600px) {
-  body {
-    /* background-size: auto 100%; */
-  }
-
   .info-grid {
     border-radius: 15% / 10%;
     padding-bottom: 3rem;
