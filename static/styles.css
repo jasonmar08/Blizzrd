@@ -151,6 +151,7 @@ img {
   .info-grid {
     border-radius: 15% / 10%;
     padding-bottom: 3rem;
+    margin-bottom: 3rem;
   }
 
   .reload, a {
