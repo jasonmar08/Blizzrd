@@ -33,7 +33,7 @@ Blizzrd is a animated weather forecast app that allows you to check your local w
 
 <div style= "center">
     <pre>
-        <img src="/static/images/blizzrd_rec1.gif"  height="450">&nbsp;&nbsp;&nbsp;<img src="/static/images/blizzrd_rec2.gif" height="450">&nbsp;&nbsp;&nbsp;<img src="/static/images/blizzrd_mobile.png" height="450">&nbsp;&nbsp;&nbsp;
+        <img src="/static/images/blizzrd_rec1.gif"  height="450">&nbsp;&nbsp;&nbsp;<img src="/static/images/blizzrd_mobile.png" height="450">&nbsp;&nbsp;&nbsp;<img src="/static/images/blizzrd_rec2.gif" height="450">&nbsp;&nbsp;&nbsp;
     </pre>
 </div>
 
