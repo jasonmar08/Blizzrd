@@ -20,6 +20,11 @@
       <input type='text' placeholder="Enter city" name="city" />
       <button type="submit">Brrr</button>
     </form>
+    <div class="error-grid">
+      {% for message in messages %}
+      <h3>{{message}}</h3>
+      {% endfor %}
+    </div>
     <div class="info-grid">
       <div>
         <h1>{{city}}, {{country}}</h1>

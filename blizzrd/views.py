@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib import messages
 from dotenv import load_dotenv
 import requests
 import datetime
@@ -22,6 +23,20 @@ def index(request):
     URL = 'https://api.openweathermap.org/data/2.5/weather'
     PARAMS = {'q': city, 'appid': appid, 'units': 'imperial'}
     r = requests.get(url=URL, params=PARAMS)
+    if r:
+        print(f"==> SUCCESS!: Here's the weather information for {city}. <==")
+    elif city == '':
+        messages.info(
+            request, f'Please enter a city or country.')
+        print(
+            f'!!==> ERROR: User submitted an empty field. <==!!')
+        return redirect('/')
+    else:
+        messages.info(
+            request, f"'{city}' does not exist! Please check your spelling and try searching for a different city or country.")
+        print(
+            f"!!==> ERROR: User entered '{city}'. This value does not exist. <==!!")
+        return redirect('/')
     res = r.json()
     description = res['weather'][0]['description']
     icon = res['weather'][0]['icon']

@@ -96,6 +96,46 @@ button:hover:after {
   right: 7px;
 }
 
+.error-grid {
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  background-color: rgba(150, 74, 74, 0.716);
+  border: none;
+  border-radius: 25px;
+  padding: 0 35px;
+  box-shadow: 0 10px 30px -4px rgba(168, 166, 166, 0.7);
+  max-width: 600px;
+  width: fit-content;
+  margin: -2rem 0;
+  z-index: 1;
+
+  animation-duration: 0.5s;
+  animation-duration: 0.3s;
+  animation-delay: 0.5s;
+  animation-name: animate-slide;
+  animation-timing-function: cubic-bezier(.26,.53,.74,1.48);
+  animation-fill-mode: backwards;
+}
+
+.error-grid { animation-name: animate-slide; }
+    @keyframes animate-slide {
+      0% {
+      opacity: 0;
+      transform: translate(0,-40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translate(0,0);
+      }
+    }
+
+.error-grid h3 {
+  color: rgb(248, 206, 206);
+  text-shadow: 0 0 1px rgb(245, 211, 211);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .info-grid {
   position: relative;
   display: flex;
